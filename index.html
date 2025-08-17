@@ -3,81 +3,35 @@
 
 <html lang="sk">
 <head>
-<style>
-  body {
-    background-color: #121212;
-    color: #e0e0e0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-  }
-  a {
-    color: #80cbc4;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 2em;
-  }
-  th, td {
-    border: 1px solid #333;
-    padding: 8px;
-    text-align: left;
-  }
-  th {
-    background-color: #1e1e1e;
-  }
-  td {
-    background-color: #2c2c2c;
-  }
-  h2, h3 {
-    color: #ffcc80;
-  }
-</style>
+
 <meta charset="utf-8"/>
 <title>Košice Travel Guide</title>
-<style>
-        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-        h1, h2, h3 { color: #2c3e50; }
-        table { width: 100%; border-collapse: collapse; margin-bottom: 40px; }
-        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; vertical-align: top; }
-        th { background-color: #f4f4f4; }
-        a { color: #2980b9; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-    </style>
+
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>
-body {
-    font-family: Arial, sans-serif;
-    font-size: 1.1em;
-    background-color: #121212;
-    color: #f0f0f0;
-    margin: 0;
-    padding: 1em;
+:root{
+ --bg:#ffffff; --fg:#222222; --muted:#6b7280; --border:#e5e7eb;
+ --th-bg:#f8fafc; --row-alt:#fcfcfd; --link:#2563eb;
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
-    overflow-x: auto;
-    display: block;
-}
-th, td {
-    padding: 0.6em;
-    border: 1px solid #444;
-    text-align: left;
-}
-a {
-    color: #90caf9;
-}
-@media (max-width: 600px) {
-    body {
-        font-size: 1.2em;
-    }
-    table {
-        font-size: 1em;
-    }
-}
-</style></head>
-<body style="font-size: 1.1rem; line-height: 1.6; padding: 1em; background-color: #fff; color: #111;">
-<h1>Košice Travel Guide (19.–21. august 2025)</h1><p>🗺️ Zobraziť všetky miesta na Google My Maps <a href="https://www.google.com/maps/d/u/0/viewer?mid=YOUR_CUSTOM_MAP_ID" target="_blank">Klikni sem pre mapu</a></p>
+html,body{background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;line-height:1.6;margin:0;padding:24px;}
+h1,h2,h3{color:#1f2937;margin:0 0 12px;}
+.table-note{color:var(--muted);font-size:.95em;margin:-8px 0 16px;}
+
+table{width:100%;border-collapse:collapse;margin:0 0 28px;}
+th,td{border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top;background:#fff}
+th{background:var(--th-bg);font-weight:600}
+tbody tr:nth-child(even) td{background:var(--row-alt);}
+
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* make wide tables scroll on mobile */
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.table-wrap table{min-width:720px}
+</style>
+</head>
+<body>
+<body>
+<h1>Košice Travel Guide (19.–21. august 2025)</h1><p>🗺️ Zobraziť všetky miesta na Google My Maps <a href="https://www.google.com/maps/d/u/1/edit?mid=1NNfV8zXNgxBpGQOXeOxeTUXCPHXjjiY&usp=sharing" target="_blank">Klikni sem pre mapu</a></p>
 <h2>☕ KÁVA</h2><p></p>
 <table style="width: 100%; border-collapse: collapse; background-color: #f9f9f9; font-size: 1rem; margin-bottom: 1em;">
 <tr><th style="background-color: #e0e0e0; color: #000; padding: 10px; border: 1px solid #ccc;">Názov</th><th style="background-color: #e0e0e0; color: #000; padding: 10px; border: 1px solid #ccc;">Adresa</th><th style="background-color: #e0e0e0; color: #000; padding: 10px; border: 1px solid #ccc;">Otváracie hodiny</th><th style="background-color: #e0e0e0; color: #000; padding: 10px; border: 1px solid #ccc;">Popis</th><th style="background-color: #e0e0e0; color: #000; padding: 10px; border: 1px solid #ccc;">Link</th></tr>
@@ -107,9 +61,8 @@ a {
 <tr><td style="padding: 10px; border: 1px solid #ccc; color: #111; background-color: #fff;">Džungľa – environmentálna výstava</td><td style="padding: 10px; border: 1px solid #ccc; color: #111; background-color: #fff;">Alžbetina 22</td><td style="padding: 10px; border: 1px solid #ccc; color: #111; background-color: #fff;">Symbióza prírody, umenia a vedy</td><td style="padding: 10px; border: 1px solid #ccc; color: #111; background-color: #fff;"><a href="https://vsg.sk/category/aktualne-vystavy/">vsg.sk</a></td></tr>
 </table>
 </html>
-
-
-### 🚌 DOPRAVA
+<h2>🚌 DOPRAVA</h2>
+<div class="table-wrap">
 <table>
 <tr>
 <th> Meno miesta </th>
@@ -132,3 +85,6 @@ a {
 <td> Električky: 2, 3, 6; Autobusy: 10, 15, 16, 17, 19, 21, 23, 27, 29 </td>
 </tr>
 </table>
+</div>
+</body>
+</html>
